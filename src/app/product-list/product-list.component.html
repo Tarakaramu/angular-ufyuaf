@@ -18,7 +18,9 @@
 </button>
 
 <!-- The angular selector -->
-<app-product-alerts [productInner]="productOuter">
+<app-product-alerts 
+[productInner]="productOuter"
+(notifySiva) = "onNotifySiva()">
 </app-product-alerts>
 
 </div>

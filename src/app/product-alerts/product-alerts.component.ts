@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import {Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-product-alerts',
@@ -8,6 +9,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProductAlertsComponent implements OnInit {
   // input property product
   @Input() productInner;
+  // output is passed from child to parent.
+  @Output() notifySiva = new EventEmitter();
   constructor() { }
 
   ngOnInit() {

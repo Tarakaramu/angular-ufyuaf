@@ -14,6 +14,11 @@ export class ProductListComponent {
     alert('The product has been shared!');
     // window.alert('The product has been shared!');
   }
+
+// user defined method
+  onNotifySiva(){
+    window.alert("You will be notified when the product is available")
+  }
 }
 
 

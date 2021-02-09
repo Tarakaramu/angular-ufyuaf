@@ -1,3 +1,4 @@
 <p *ngIf="productInner.price > 700">
-<button>Notify Me </button>
+  <!-- the event is emitted -->
+<button (click) = "notifySiva.emit()">Notify Me </button>
 </p>
